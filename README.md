@@ -25,7 +25,7 @@ ssh root@sandbox.hortonworks.com
 - To deploy the Solr stack, run below
 ```
 VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
-sudo git clone https://github.com/abajwa-hw/solr-stack.git /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/SOLR
+sudo git clone https://github.com/HortonworksUniversity/solr-stack.git /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/SOLR
 ```
 
 - Restart Ambari
@@ -66,7 +66,7 @@ curl -sSL https://raw.githubusercontent.com/seanorama/ambari-bootstrap/master/am
 export install_ambari_server=true
 curl -sSL https://raw.githubusercontent.com/seanorama/ambari-bootstrap/master/ambari-bootstrap.sh | sudo -E sh
 yum install -y git
-git clone https://github.com/abajwa-hw/solr-stack.git /var/lib/ambari-server/resources/stacks/HDP/2.3/services/SOLR
+git clone https://github.com/HortonworksUniversity/solr-stack.git /var/lib/ambari-server/resources/stacks/HDP/2.3/services/SOLR
 ```
 
 
